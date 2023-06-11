@@ -1,11 +1,17 @@
+"""Password Star Program"""
+
+
 def main():
-    password = get_password()
-    asterisks = '*' * len(password)
-    print("\n" + asterisks)
+    password = enter_password()
+    stars = display_stars(password)
+    print(stars)
 
+def enter_password():
+    password = input("Enter password : ")
+    return password
 
-def get_password():
-    return input("Enter password: ")
+def display_stars(password):
+    return '*' * len(password)
 
 
 main()
